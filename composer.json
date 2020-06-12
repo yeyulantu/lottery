@@ -1,0 +1,32 @@
+{
+    "name": "mast/mast",
+    "description": "the mast framework based PHP for web",
+    "keywords": [
+        "framework",
+        "mast"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://www.yxtkclub.com/",
+    "authors": [
+        {
+            "name": "david",
+            "email": "431960018@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "doctrine/orm": "^2.7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        },
+        "psr-0": {
+            "": "extend\\"
+        }
+    },
+    "scripts": {
+
+    }
+}
