@@ -2,7 +2,7 @@
 
 namespace mast;
 
-class Request
+class Http
 {
 
 }

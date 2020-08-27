@@ -29,4 +29,13 @@ class Application extends Container
     {
 
     }
+
+    /**
+     * mast version
+     * @return string
+     */
+    public function version()
+    {
+        return self::VERSION;
+    }
 }
