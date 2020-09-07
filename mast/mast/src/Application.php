@@ -9,6 +9,10 @@ class Application extends Container
      */
     const VERSION = '1.0.0';
 
+    protected $bind = [
+        'response' => 'mast\Response',
+    ];
+
     /**
      * Application constructor.
      */
@@ -22,7 +26,12 @@ class Application extends Container
      */
     public function run()
     {
-        echo 'test';
+        try {
+            $this->make('response')->send();
+        } catch (\Throwable $e) {
+
+        }
+
     }
 
     public function initialize()
